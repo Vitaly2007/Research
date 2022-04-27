@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type"
+		content="text/html; charset=utf-8">
+		<title>Graphic panel</title>
+	</head>
+	<body>
+		<h1>Subsidiary</h1>
+		{% for subsid in subsidiarys %}
+		<table>
+			<tbody>
+				<tr>
+					<td>{{ subsid.pk }}</td>
+					<td>
+						<a href="/panel/{{ subsid.pk }}" target="_blank">{{ subsid.name }}</a>
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		{% endfor %}
+	</body>
+</html>

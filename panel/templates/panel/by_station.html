@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type"
+		content="text/html; charset=utf-8">
+		<title>{{ subsidiary.name }}</title>
+	</head>
+	<body>
+		<h1>Station</h1>
+		{% for station in stations %}
+		<table>
+			<tbody>
+				<tr>
+					<td>{{ station.pk }}</td>
+					<td>{{ station.title }}</td>
+				</tr>
+			</tbody>
+		</table>
+		{% endfor %}
+	</body>
+</html>
